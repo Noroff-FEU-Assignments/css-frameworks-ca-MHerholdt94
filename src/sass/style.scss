@@ -1,0 +1,44 @@
+// custom
+$color-primary: #E92569;
+$color-secondary: #767676;
+$color-bg: radial-gradient(white, #E5E5E5);
+$color-content-bg: radial-gradient(white, #F5F5F5);
+$color-border: #D1D1D1;
+$color-black: #0A0A0A;
+$color-grey: #C7C7C7;
+$color-light: #EFEFEF;
+
+// bootstrap
+$theme-colors: (
+    "primary": $color-primary,
+    "secondary": $color-secondary,
+    "light": $color-light,
+);
+
+$body-color: $color-secondary;
+$font-family-base: "lato", sans-serif;
+$headings-font-family: "playfair display", serif;
+$headings-color: $color-primary;
+
+$accordion-button-color: $color-primary;
+$accordion-button-active-color: $color-primary;
+$accordion-bg: $color-bg;
+$accordion-button-active-bg: white;
+$accordion-button-bg: white;
+
+$form-check-input-width: 1.5em;
+$form-check-input-checked-bg-color: $color-primary;
+$form-check-input-border: none;
+$form-check-input-checked-bg-image: "";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "./partials/layout";
+@import "./partials/typography";
+@import "./partials/nav";
+@import "./partials/carousel";
+@import "./partials/tabs";
+@import "./partials/accordion";
+@import "./partials/card";
+@import "./partials/form";
+@import "./partials/contact";

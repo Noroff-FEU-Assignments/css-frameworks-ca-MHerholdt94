@@ -1,0 +1,40 @@
+.accordion {
+    &-header {
+        font-family: "lato", sans-serif;
+    }
+
+    &-collapse {
+        background: $color-content-bg;
+    }
+
+    &-button {
+        border-bottom: 2px solid $color-primary;
+    }
+
+    &-button:focus {
+        border-color: $color-primary;
+    }
+
+    &-button:hover {
+        z-index: 1;
+    }
+
+    &-button.collapsed {
+        border: none;
+    }
+
+    &-body img {
+        width: 100%;
+        max-height: 250px;
+        object-fit: contain;
+        margin: .5em auto 1.5em auto;
+    }
+
+    &-collapse .text-black {
+        text-align: center;
+    }
+
+    .share-icons {
+        justify-content: center;
+    }
+}

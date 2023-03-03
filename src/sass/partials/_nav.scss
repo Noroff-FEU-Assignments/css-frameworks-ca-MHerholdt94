@@ -1,0 +1,100 @@
+.navbar {
+    display: flex;
+    z-index: 3;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    &-nav a {
+        text-decoration: none;
+        color: $color-black;
+    }
+
+    &-brand {
+        color: $color-primary;
+        font-family: "playfair display", serif;
+        font-style: italic;
+        margin-right: 2em;
+        margin-left: 1em;
+    }
+
+    &-toggler {
+        border: none;
+        margin-right: .5em;
+    }
+
+    &-toggler:focus {
+        box-shadow: none;
+    }
+
+    form {
+        input {
+            border-radius: 5px 0 0 5px;
+        }
+
+        button {
+            border-radius: 0 5px 5px 0;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        position: sticky;
+        top: 0;
+        box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.1);
+
+        &-collapse {
+            position: absolute;
+            top: 56px;
+            z-index: 3;
+            background-color: #EFEFEF;
+            width: 100%;
+            box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.1);
+    
+            form {
+                margin: 2em 1em;
+            }
+    
+            input {
+                padding: .75em 1em;
+            }
+        }
+
+        &-nav a {
+            display: flex;
+            gap: 1em;
+            padding: .75em 2em;
+            margin-top: 1em;
+
+            &.active {
+                background-color: white;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &-expand-lg .navbar-nav .nav-link {
+            padding: 0 1em;
+        }
+
+        .nav-link.active {
+            border-radius: 5px;
+        }
+
+        &-collapse form {
+            margin: 0 1em;
+        }
+
+        &-collapse a {
+            width: 74px;
+            text-align: center;
+            padding: .33em .5em;
+        }
+
+        &-nav {
+            gap: .25em;
+        }
+
+        &-nav a.active {
+            background-color: white;
+            border-radius: 5px;
+        }
+    }
+}

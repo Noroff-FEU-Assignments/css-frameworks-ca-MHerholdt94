@@ -1,0 +1,25 @@
+.carousel {
+    &-control-prev {
+        display: none;
+    }
+
+    &-control-next {
+        display: none;
+    }
+
+    &-indicators [data-bs-target] {
+        height: 1.5em;
+        width: 1.5em;
+        opacity: 1;
+        border: none;
+        border-radius: 2px;
+    }
+
+    &-indicators button {
+        border-radius: 5px;
+    }
+
+    &-indicators .active {
+        background-color: $color-primary;
+    }
+}
